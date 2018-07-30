@@ -1,0 +1,24 @@
+{
+  "name": "vuex-namespace",
+  "version": "1.0.0",
+  "description": "a namespace for vuex",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenhyuwa/vuex-namespace.git"
+  },
+  "keywords": [
+    "vuex",
+    "namespace",
+    "vuex-namespace"
+  ],
+  "author": "kenhyuwa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kenhyuwa/vuex-namespace/issues"
+  },
+  "homepage": "https://github.com/kenhyuwa/vuex-namespace#readme"
+}
