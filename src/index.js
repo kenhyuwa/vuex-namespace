@@ -1,7 +1,20 @@
-function sayHiTo(name) {
-  return `Hi, ${name}`;
+function mapValues (obj, f) {
+    const res = {};
+    Object.keys(obj).forEach(key => {
+        res[key] = f(obj[key], key)
+    });
+    return res
 }
 
-const message = sayHiTo('Bruno');
+export default (modules, types) => {
+    let newObj = {};
 
-console.log(message);
+    mapValues(types, (names, type) => {
+        newObj[type] = {};
+        types[type].forEach(name=> {
+            var newKey = modules + '/' + name;
+            newObj[type][name] = newKey;
+        });
+    });
+    return newObj;
+}
