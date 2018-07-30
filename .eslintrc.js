@@ -3,6 +3,9 @@ module.exports = {
         "browser": true
     },
     "extends": "eslint:recommended",
+    "env": {
+        "mocha": true
+    },
     "parserOptions": {
         "ecmaVersion": 5
     },
